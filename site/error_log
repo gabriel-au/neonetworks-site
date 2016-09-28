@@ -1,0 +1,5 @@
+[03-Mar-2016 23:43:04 UTC] PHP Fatal error:  Class 'Layers_Widget_Migrator' not found in /home/neoita/public_html/site/wp-content/themes/layerswp/core/widgets/init.php on line 181
+[04-Mar-2016 23:29:28 UTC] PHP Fatal error:  Class 'Layers_Widget_Migrator' not found in /home/neoita/public_html/site/wp-content/themes/layerswp/core/widgets/init.php on line 181
+[07-Mar-2016 23:42:46 UTC] PHP Fatal error:  Class 'Layers_Widget_Migrator' not found in /home/neoita/public_html/site/wp-content/themes/layerswp/core/widgets/init.php on line 181
+[11-Mar-2016 20:33:57 UTC] PHP Fatal error:  Class 'Layers_Widget_Migrator' not found in /home/neoita/public_html/site/wp-content/themes/layerswp/core/widgets/init.php on line 181
+[15-Mar-2016 07:08:00 UTC] PHP Fatal error:  Class 'Layers_Widget_Migrator' not found in /home/neoita/public_html/site/wp-content/themes/layerswp/core/widgets/init.php on line 181
