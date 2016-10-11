@@ -64,23 +64,23 @@
 							$portfolioURL    = get_post_meta($post->ID, 'tz_portfolio_url', true);
 							$portfolioMeta   = of_get_option('folio_meta');
 
-							if($portfolioMeta == "yes"){
-								$post_type = get_post_type($post);
-								if (has_term('', $post_type.'_category', $post->ID) || has_term('', $post_type.'_tag', $post->ID)) {
-									echo '<div class="portfolio-meta">';
-										if(has_term('', $post_type.'_category', $post->ID)){
-											echo '<span class="post_category"><i class="icon-bookmark"></i>';
-											echo the_terms($post->ID, $post_type.'_category','',', ');
-											echo '</span>';
-										}
-										if(has_term('', $post_type.'_tag', $post->ID)){
-											echo '<span class="post_tag"><i class="icon-tag"></i>';
-											echo the_terms($post->ID, $post_type.'_tag','',', ');
-											echo '</span>';
-										}
-									echo '</div>';
-								}
-							}
+							// if($portfolioMeta == "yes"){
+							// 	$post_type = get_post_type($post);
+							// 	if (has_term('', $post_type.'_category', $post->ID) || has_term('', $post_type.'_tag', $post->ID)) {
+							// 		echo '<div class="portfolio-meta">';
+							// 			if(has_term('', $post_type.'_category', $post->ID)){
+							// 				echo '<span class="post_category"><i class="icon-bookmark"></i>';
+							// 				echo the_terms($post->ID, $post_type.'_category','',', ');
+							// 				echo '</span>';
+							// 			}
+							// 			if(has_term('', $post_type.'_tag', $post->ID)){
+							// 				echo '<span class="post_tag"><i class="icon-tag"></i>';
+							// 				echo the_terms($post->ID, $post_type.'_tag','',', ');
+							// 				echo '</span>';
+							// 			}
+							// 		echo '</div>';
+							// 	}
+							// }
 							if (!empty($portfolioClient) || !empty($portfolioDate) || !empty($portfolioInfo) || !empty($portfolioURL)) {
 								echo '<ul class="portfolio-meta-list">';
 							}

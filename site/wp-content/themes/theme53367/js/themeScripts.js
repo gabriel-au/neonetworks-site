@@ -85,3 +85,82 @@ jQuery(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+
+  function showRocketChat() {
+    // alert('SHOW');
+    $("#rocketchat-iframe").show();
+  }
+
+  function hideRocketChat() {
+    // alert('HIDE');
+    $("#rocketchat-iframe").hide();
+    // $("#rocketchat-iframe").children().hide();
+    // $("#rocketchat-iframe").css("display", "none");
+  }
+
+  function verifyPage() {
+    if (jQuery('#content div div').hasClass('portfolio_category-products') || jQuery('body').hasClass('home')) {
+      // showRocketChat();
+      $("h2.related-posts_h").html('<span>RELATED</span> PRODUCTS');
+    } else {
+      // hideRocketChat();
+      $("h2.related-posts_h").html('<span>RELATED</span> SERVICES');
+    }
+  }
+  
+  verifyPage();
+
+  $("a[data-hover='Home'").click(function(){
+      showRocketChat();
+  });
+
+  $("a[data-hover='Services'").click(function(){
+      hideRocketChat();
+  });
+
+  $("a[data-hover='Products'").click(function(){
+      showRocketChat();
+  });
+
+  $("a[data-hover='Contact Us'").click(function(){
+      showRocketChat();
+  });
+
+  $("dd").hide();
+
+  $("dt").click(function(){
+      if($(this).next().is(':hidden')) {
+        $(this).next().show();
+      } else {
+        $(this).next().hide();
+      }
+      
+  });
+  
+});
+
+$(window).load(function(){
+  // alert("TESTE");
+  $('body.home').attr('style', 'background-color: #FFFFFF !important');
+  // $("#rocketchat-iframe").hide();
+
+  if (jQuery('#content div div').hasClass('portfolio_category-products') || jQuery('body').hasClass('home')) {
+      $("#rocketchat-iframe").show();
+    } else {
+      $("#rocketchat-iframe").hide();
+    }
+});
+
+// $(document).load(function(){
+//   $("#rocketchat-iframe").hide();
+// });
+
+// $('#rocketchat-iframe').ready(function(){
+//   // alert('');
+//    // $('div.rocketchat-container').html('PORRA');
+//    // $('div.rocketchat-container').css("display", "none");
+//    // $(this).css("display", "none");
+//    $(this).hide();
+// });
+
