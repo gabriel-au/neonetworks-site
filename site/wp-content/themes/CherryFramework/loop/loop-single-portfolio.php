@@ -39,16 +39,24 @@
 						break;
 				}?>
 				<!--BEGIN .pager .single-pager -->
-				<ul class="pager single-pager">
-				<?php if (get_previous_post()) : ?>
-					<li class="previous"><?php previous_post_link('%link', theme_locals("prev_post")) ?></li>
-				<?php endif; ?>
+				<!-- <ul class="pager single-pager"> -->
+				<?php 
+					// if (get_previous_post()) : 
+				?>
+					<!-- <li class="previous"><?php previous_post_link('%link', theme_locals("prev_post")) ?></li> -->
+				<?php 
+					// endif;
+				?>
 
-				<?php if (get_next_post()) : ?>
-					<li class="next"><?php next_post_link('%link', theme_locals("next_post")) ?></li>
-				<?php endif; ?>
+				<?php 
+					// if (get_next_post()) : 
+				?>
+					<!-- <li class="next"><?php next_post_link('%link', theme_locals("next_post")) ?></li> -->
+				<?php 
+					// endif; 
+				?>
 				<!--END .pager .single-pager -->
-				</ul>
+				<!-- </ul> -->
 			</div>
 
 			<!-- BEGIN .entry-content -->
@@ -129,7 +137,7 @@
 			<div class="<?php echo $left_block; ?>">
 				<?php
 					get_template_part( 'includes/post-formats/related-posts' );
-					comments_template('', true);
+					// comments_template('', true);
 				?>
 			</div>
 		</div>

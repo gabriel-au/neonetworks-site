@@ -132,11 +132,16 @@ $(document).ready(function(){
   $("dt").click(function(){
       if($(this).next().is(':hidden')) {
         $(this).next().show();
+        $(this).find('h4.marker').html('<img src="../../wp-content/themes/CherryFramework/images/toggle-close.png" style="cursor: pointer;"/>');
       } else {
         $(this).next().hide();
+        $(this).find('h4.marker').html('<img src="../../wp-content/themes/CherryFramework/images/toggle-open.png" style="cursor: pointer;"/>');
       }
       
   });
+
+  $("dt > h4.marker").html('<img src="../../wp-content/themes/CherryFramework/images/toggle-open.png" style="cursor: pointer;"/>');
+  $("dd > h4.marker").html('');
   
 });
 

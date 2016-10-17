@@ -1,0 +1,24 @@
+/* Custom Theme */
+a, h1, h2 {
+    color:#2c639e; 
+}
+.nav {
+    background: #3d80b9;
+}
+.nav .support, .search a {
+    color: #bbe1f5;
+}
+.button {
+    color: #2c639e;
+    background: #a0d5f1;
+}
+.button:hover {
+    color: #255385;
+    background: #92d0f0;
+}
+.search {
+    background: #4583b8;
+}
+.aside {
+    background: #62819b;
+}
